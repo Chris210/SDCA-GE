@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#20242a">
+  <title>Loughborough or London? — Poster</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #34383d; }
+    .page { min-height: 100vh; height: 100dvh; display: flex; flex-direction: column; }
+    .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.65rem 1rem; background: #fff; color: #20242a; }
+    .toolbar h1 { font-size: 1rem; line-height: 1.3; font-weight: 600; margin: 0; }
+    .toolbar a { color: #174d84; font-size: 0.9rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
+    .toolbar a:hover, .toolbar a:focus-visible { text-decoration: underline; }
+    .viewer { flex: 1; min-height: 0; width: 100%; border: 0; background: #34383d; }
+    .fallback { padding: 1rem; color: #fff; }
+    .fallback a { color: #fff; }
+    @media (max-width: 500px) {
+      .toolbar { padding: 0.65rem 0.8rem; }
+      .toolbar h1 { font-size: 0.9rem; }
+      .toolbar a { font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="toolbar">
+      <h1>Loughborough or London?</h1>
+      <a href="./Loughborough-or-London_A4_poster.pdf" target="_blank" rel="noopener">Open / download PDF</a>
+    </header>
+    <iframe
+      class="viewer"
+      src="./Loughborough-or-London_A4_poster.pdf#view=FitH"
+      title="Loughborough or London? A4 poster"
+      loading="eager">
+      <p class="fallback">Your browser cannot display the PDF here. <a href="./Loughborough-or-London_A4_poster.pdf">Open the poster</a>.</p>
+    </iframe>
+  </main>
+</body>
+</html>
